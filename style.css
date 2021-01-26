@@ -2,6 +2,13 @@
 :root{
     --dark-green: #264653;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 html{
     font-size: 93.75%; /* 15px */
 }
@@ -215,6 +222,8 @@ table td{
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999;
 }
 .modal-overlay.active{
     opacity: 1;
@@ -224,7 +233,11 @@ table td{
 .modal{
     background-color: #f0f2f5;
     padding: 2.4rem;
+    border-radius: 0.25rem;
+
     position: relative;
+
+    z-index: inherit;
 }
 /* Form ------------------------ */
 #form {
